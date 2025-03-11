@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Caio Santos de Souza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>CAIO SANTOS DE SOUZA</h1>
+                <nav>
+                    <ul>
+                        <li>Sobre</li>
+                        <li>Formação Acadêmica</li>
+                        <li>Cursos</li>
+                        <li>Projetos</li>
+                        <li>Contato</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home" class="banner">
+            <div class="banner-content">
+                <h2>Bem-vindo ao meu portfólio!</h2>
+            </div>
+        </section>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-title" onclick="toggleAccordion('sobre')">Sobre</button>
+                <div id="sobre" class="accordion-content">
+                    <p><italic>Sou um desenvolvedor web apaixonado por transformar ideias em soluções digitais eficientes e inovadoras. Com experiência em desenvolvimento full-stack, tenho trabalhado com tecnologias modernas como React, Node.js, Python/Django, Flutter e SQL, criando aplicações escaláveis e de alta performance.</italic><br><br><br>
+
+                        <strong>Habilidades principais:</strong><br><br>
+                        - <strong>Front-end:</strong> React, JavaScript (ES6+), HTML5, CSS3, Bootstrap.<br>
+                        - <strong>Back-end:</strong> Python, Django, Node.js, APIs RESTful.<br>
+                        - <strong>Banco de dados:</strong> MySQL, PostgreSQL.<br>
+                        - <strong>Mobile:</strong> Desenvolvimento multiplataforma com Flutter e Dart.<br>
+                        - <strong>Ferramentas e práticas:</strong>Git, Docker, testes unitários e de integração.<br><br><br>
+                        
+                        <strong>Soft skills:</strong><br><br>
+                        - Comunicação clara e eficaz.<br>
+                        - Trabalho em equipe e colaboração.<br>
+                        - Resolução de problemas e pensamento crítico.<br>
+                        - Adaptabilidade e aprendizado contínuo.<br><br><br>
+                        
+                        <strong>Objetivo:</strong><br><br>
+                        Busco constantemente aprimorar minhas habilidades e contribuir para projetos desafiadores que impactem positivamente a vida das pessoas. Meu foco é crescer como desenvolvedor, colaborar em equipes multidisciplinares e aplicar soluções tecnológicas que resolvam problemas reais.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title" onclick="toggleAccordion('formacao')">Formação Acadêmica</button>
+                <div id="formacao" class="accordion-content">
+                    <li>
+                        <strong>Bacharelado em Ciência da Computação</strong> - Universidade Anhembi Morumbi <br>
+                        Status: Ainda atuando.<br>
+                        <p><strong>Certificados:</strong><br><br>
+                            SISTEMAS DISTRIBUÍDOS E MOBILE<br> 
+                            (Conclusão: 10/06/2024).<br><br>
+                            COMPUTAÇÃO GRÁFICA E REALIDADE VIRTUAL<br>
+                            (Conclusão: 11/12/2024)<br><br>
+                            ESTRUTURAS MATEMÁTICAS<br>
+                            (Conclusão: 14/12/2024)
+                        </p>
+                    </li>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title" onclick="toggleAccordion('cursos')">Cursos e Formações</button>
+                <div id="cursos" class="accordion-content">
+                    <input type="text" id="searchInput" onkeyup="filtrarCursos()" placeholder="Buscar cursos...">
+                    <ul id="listaCursos">
+                        <p>Concluí 100% das atividades em mais de 20 cursos na Alura, totalizando mais de 800 horas de formação.</p>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/django-rest-framework-construindo-apis-restful-zero/certificate" target="_blank">Django REST Framework: construindo APIs RESTful do Zero</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/django-rest-framework-permissoes-documentacao-limitacoes-cors-deploy-aws/certificate" target="_blank">Django REST Framework: trabalhando com permissões e deploy</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/django-rest-framework-trabalhando-testes-unitarios-integracao/certificate" target="_blank">Django REST Framework: trabalhando com testes unitários</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/django-rest-framework-validacoes-paginacao-filtros-versionamento-api/certificate" target="_blank">Django REST Framework: validações, paginação e filtros</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/django-autenticacao-oauth2-0/certificate" target="_blank">Django: autenticação com OAuth2.0</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/django-autenticacao-formularios-alerta/certificate" target="_blank">Django: autenticação de formulários e alerta</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/django-crud-persistencia-s3/certificate" target="_blank">Django: CRUD e persistência no S3</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/django-persistencia-dados-admin/certificate" target="_blank">Django: persistência de dados e Admin</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/django-templates-boas-praticas/certificate" target="_blank">Django: templates e boas práticas</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/javascritpt-orientacao-objetos/certificate" target="_blank">JavaScript: programando a Orientação a Objetos</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/mysql-conhecendo-ferramenta/certificate" target="_blank">MySQL: conhecendo a ferramenta</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/banco-dados-mysql-executando-procedures/certificate" target="_blank">MySQL: executando Procedures</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/node-primeira-api-express/certificate" target="_blank">Node.js: criando uma API com Express</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/python-introducao-a-linguagem/certificate" target="_blank">Python: começando com a linguagem</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/python-crie-sua-primeira-aplicacao/certificate" target="_blank">Python: crie a sua primeira aplicação</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/python-exceptions/certificate" target="_blank">Python3: entendendo o Tratamento de Erros</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/python-3-intro-orientacao-objetos/certificate" target="_blank">Python: entendendo a Orientação a Objetos</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/python-aplicando-orientacao-objetos/certificate" target="_blank">Python: aplicando a Orientação a Objetos</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/python-3-avancando-orientacao-objetos/certificate" target="_blank">Python: avançando na orintação a objetos</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/python-3-avancando-na-linguagem/certificate" target="_blank">Python: avançando na linguagem</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/pep8-linters-python/certificate" target="_blank">Python: boas práticas de código com PEP8</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/react-node-consumindo-apis-react/certificate" target="_blank">React e Node.js: consumindo APIs</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/react-crie-primeira-pagina-web/certificate" target="_blank">React: comece seu projeto full stack</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/caio-32tite/course/sqlite-online-conhecendo-instrucoes-sql/certificate" target="_blank">SQLite online: conhecendo instruções SQL</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-title" onclick="toggleAccordion('projetos')">Projetos</button>
+                <div id="projetos" class="accordion-content">
+                    <div class="projetos-grid">
+                        <div class="projeto-card">
+                          <h3>API RESTful com Django</h3>
+                          <p>Desenvolvi uma API completa com autenticação OAuth2, permissões, e deploy na AWS.</p>
+                          <p><strong>Tecnologias:</strong> Django, Python, AWS</p>
+                          <a href="https://cursos.alura.com.br/user/caio-32tite/course/django-rest-framework-construindo-apis-restful-zero/certificate" target="_blank">Ver Certificado</a>
+                        </div>
+                        <br>
+                        <div class="projeto-card">
+                          <h3>Sistema CRUD com S3</h3>
+                          <p>Criei um sistema de CRUD integrado ao Amazon S3 pra persistência de dados.</p>
+                          <p><strong>Tecnologias:</strong> Django, Python, AWS S3</p>
+                          <a href="https://cursos.alura.com.br/user/caio-32tite/course/django-crud-persistencia-s3/certificate" target="_blank">Ver Certificado</a>
+                        </div>
+                        <br>
+                        <div class="projeto-card">
+                          <h3>App com Testes Unitários</h3>
+                          <p>Implementei testes unitários e de integração numa API Django.</p>
+                          <p><strong>Tecnologias:</strong> Django, Python, Testes</p>
+                          <a href="https://cursos.alura.com.br/user/caio-32tite/course/django-rest-framework-trabalhando-testes-unitarios-integracao/certificate" target="_blank">Ver Certificado</a>
+                        </div>
+                      </div>
+                            <div class="social-icons">
+                                <a href="https://github.com/CaioSouza10" target="_blank" aria-label="GitHub" class="github-icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            <a href="https://cursos.alura.com.br/user/caio-32tite" target="_blank" aria-label="Alura" class="alura-icon"> 
+                                <i class="fas fa-graduation-cap"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="accordion-item">
+                <button class="accordion-title" onclick="toggleAccordion('contato')">Contato</button>
+                <div id="contato" class="accordion-content">
+                    <div class="contato-grid">
+                        <div class="contato-card">
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/caio-santos-de-souza-4771b7261/" target="_blank" aria-label="LinkedIn" class="linkedin-icon">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.instagram.com/desouza.caio/" target="_blank" aria-label="Instagram" class="instagram-icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/5511975262746" target="_blank" aria-label="WhatsApp" class="whatsapp-icon">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>    
+        </div>
+        <footer>
+            <p>&copy; 2025 Caio Santos de Souza. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

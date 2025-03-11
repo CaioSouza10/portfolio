@@ -1,0 +1,226 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Plano de fundo com gradiente radial */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: repeating-radial-gradient(#0c0a0a 80%, #2f312f 90%, #3f4549 90%);
+    background-size: 65px 65px;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(130, 145, 189, 0.8); /* Fundo semi-transparente */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+    max-width: 800px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza o cabeçalho */
+    width: 90%; /* Largura relativa */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    text-align: center;
+    padding: 30px 4px; /* Reduzi o padding para deixar mais justo */
+    background-color: rgba(130, 145, 189, 0.8); /* Fundo semi-transparente */
+    color: white;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+    max-width: 800px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza o banner */
+    width: 90%; /* Largura relativa */
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner button {
+    background-color: white;
+    color: #8291bd;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #f1f1f1;
+}
+
+.accordion {
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    position: relative;
+    z-index: 1;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+    width: 100%;
+    background: #007BFF;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.accordion-title:hover {
+    background: #0056b3;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    color: #333;
+}
+
+.accordion-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.accordion-content ul li {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(51, 16, 248, 0.8); /* Fundo semi-transparente */
+    color: white;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+
+/* Estilos gerais para os ícones */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+.github-icon {
+    color: #181717; /* Preto do GitHub */
+}
+
+.github-icon:hover {
+    color: #333; /* Tom mais claro ao passar o mouse */
+}
+
+.alura-icon {
+    color: #181717;
+}
+
+.alura-icon:hover {
+    color: #333;
+}
+
+/* Cor específica para o ícone do LinkedIn */
+.linkedin-icon {
+    color: #0077B5; /* Azul do LinkedIn */
+}
+
+.linkedin-icon:hover {
+    color: #004471; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Cor específica para o ícone do Instagram */
+.instagram-icon {
+    color: #E4405F; /* Rosa do Instagram */
+}
+
+.instagram-icon:hover {
+    color: #B32E4A; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Cor específica para o ícone do WhatsApp */
+.whatsapp-icon {
+    color: #25D366; /* Verde do WhatsApp */
+}
+
+.whatsapp-icon:hover {
+    color: #128C7E; /* Tom mais escuro ao passar o mouse */
+}
+
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px;
+  }
+  .projeto-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .projeto-card h3 {
+    margin-top: 0;
+    color: #007BFF;
+  }
+  .projeto-card a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  .projeto-card a:hover {
+    text-decoration: underline;
+  }
